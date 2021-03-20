@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 def getData(array,number):
     return array[number][array[number].find(' ') + 1 : len(array[number])]
 
-def getWholeData():
+def getWholeData(array):
     result = dict()
     result['sick'] = getData(array,0)
     result['sickChange'] = getData(array,1)
@@ -41,7 +41,7 @@ def CoronaStats():
 
     array = stats.split(',')
 
-    data = getWholeData()
+    data = getWholeData(array)
     message = '<b>' + date + '</b>' 
     message += ':\n<i>Выявлено случаев всего:</i> ' 
     message += "<b>" + data['sick'] + "</b>" 
