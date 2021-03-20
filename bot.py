@@ -36,7 +36,7 @@ def lalala(message):
         if message.text == 'Статистика распространения коронавируса':
             sti = open("stickers/5.tgs",'rb')
             bot.send_sticker(message.chat.id, sti)
-            bot.send_message(message.chat.id,parse.message,parse_mode = 'html')
+            bot.send_message(message.chat.id,parse.CoronaStats(),parse_mode = 'html')
         else:
             sti = open("stickers/10.tgs",'rb')
             bot.send_sticker(message.chat.id, sti)

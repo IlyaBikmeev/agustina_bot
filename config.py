@@ -1,1 +1,2 @@
-TOKEN = '1650017135:AAHXBKT2d83nb1LWOQk6SPNJhR7NEiEahqo'
+# your token
+TOKEN = ''
